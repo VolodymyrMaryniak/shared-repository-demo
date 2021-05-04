@@ -32,6 +32,7 @@ namespace SharedRepositoryDemo
 			this.firstNumberTextBox = new System.Windows.Forms.TextBox();
 			this.secondNumberTextBox = new System.Windows.Forms.TextBox();
 			this.resultLabel = new System.Windows.Forms.Label();
+			this.addBtn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// firstNumberTextBox
@@ -61,11 +62,22 @@ namespace SharedRepositoryDemo
 			this.resultLabel.TabIndex = 2;
 			this.resultLabel.Text = "Result: ";
 			// 
+			// addBtn
+			// 
+			this.addBtn.Location = new System.Drawing.Point(71, 137);
+			this.addBtn.Name = "addBtn";
+			this.addBtn.Size = new System.Drawing.Size(68, 34);
+			this.addBtn.TabIndex = 3;
+			this.addBtn.Text = "+";
+			this.addBtn.UseVisualStyleBackColor = true;
+			this.addBtn.Click += new System.EventHandler(this.AddBtn_Click);
+			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(403, 312);
+			this.Controls.Add(this.addBtn);
 			this.Controls.Add(this.resultLabel);
 			this.Controls.Add(this.secondNumberTextBox);
 			this.Controls.Add(this.firstNumberTextBox);
@@ -83,6 +95,7 @@ namespace SharedRepositoryDemo
 		private System.Windows.Forms.TextBox firstNumberTextBox;
 		private System.Windows.Forms.TextBox secondNumberTextBox;
 		private System.Windows.Forms.Label resultLabel;
+		private System.Windows.Forms.Button addBtn;
 	}
 }
 

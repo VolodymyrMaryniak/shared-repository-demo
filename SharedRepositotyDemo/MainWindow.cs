@@ -27,5 +27,19 @@ namespace SharedRepositoryDemo
                 e.Handled = true;
             }
         }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+	        var fistNumber = Convert.ToDecimal(firstNumberTextBox.Text);
+	        var secondNumber = Convert.ToDecimal(secondNumberTextBox.Text);
+
+            SetResult(fistNumber + secondNumber);
+        }
+
+        private void SetResult(decimal result)
+        {
+	        // ReSharper disable once LocalizableElement
+	        resultLabel.Text = $"Result: {result}";
+        }
     }
 }
