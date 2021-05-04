@@ -31,6 +31,7 @@ namespace SharedRepositoryDemo
 		{
 			this.firstNumberTextBox = new System.Windows.Forms.TextBox();
 			this.secondNumberTextBox = new System.Windows.Forms.TextBox();
+			this.resultLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// firstNumberTextBox
@@ -51,11 +52,21 @@ namespace SharedRepositoryDemo
 			this.secondNumberTextBox.TabIndex = 1;
 			this.secondNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumericTextBox_KeyPress);
 			// 
+			// resultLabel
+			// 
+			this.resultLabel.AutoSize = true;
+			this.resultLabel.Location = new System.Drawing.Point(71, 213);
+			this.resultLabel.Name = "resultLabel";
+			this.resultLabel.Size = new System.Drawing.Size(68, 25);
+			this.resultLabel.TabIndex = 2;
+			this.resultLabel.Text = "Result: ";
+			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(403, 312);
+			this.Controls.Add(this.resultLabel);
 			this.Controls.Add(this.secondNumberTextBox);
 			this.Controls.Add(this.firstNumberTextBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -71,6 +82,7 @@ namespace SharedRepositoryDemo
 
 		private System.Windows.Forms.TextBox firstNumberTextBox;
 		private System.Windows.Forms.TextBox secondNumberTextBox;
+		private System.Windows.Forms.Label resultLabel;
 	}
 }
 
