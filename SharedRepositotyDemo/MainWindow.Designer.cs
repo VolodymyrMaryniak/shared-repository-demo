@@ -35,19 +35,19 @@ namespace SharedRepositoryDemo
 			// 
 			// firstNumberTextBox
 			// 
-			this.firstNumberTextBox.Location = new System.Drawing.Point(134, 78);
+			this.firstNumberTextBox.Location = new System.Drawing.Point(71, 30);
 			this.firstNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.firstNumberTextBox.Name = "firstNumberTextBox";
-			this.firstNumberTextBox.Size = new System.Drawing.Size(141, 31);
+			this.firstNumberTextBox.Size = new System.Drawing.Size(262, 31);
 			this.firstNumberTextBox.TabIndex = 0;
 			this.firstNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumericTextBox_KeyPress);
 			// 
 			// secondNumberTextBox
 			// 
-			this.secondNumberTextBox.Location = new System.Drawing.Point(363, 77);
+			this.secondNumberTextBox.Location = new System.Drawing.Point(71, 71);
 			this.secondNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.secondNumberTextBox.Name = "secondNumberTextBox";
-			this.secondNumberTextBox.Size = new System.Drawing.Size(141, 31);
+			this.secondNumberTextBox.Size = new System.Drawing.Size(262, 31);
 			this.secondNumberTextBox.TabIndex = 1;
 			this.secondNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumericTextBox_KeyPress);
 			// 
@@ -55,9 +55,10 @@ namespace SharedRepositoryDemo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(651, 514);
+			this.ClientSize = new System.Drawing.Size(403, 312);
 			this.Controls.Add(this.secondNumberTextBox);
 			this.Controls.Add(this.firstNumberTextBox);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "MainWindow";
 			this.Text = "Calculator";
