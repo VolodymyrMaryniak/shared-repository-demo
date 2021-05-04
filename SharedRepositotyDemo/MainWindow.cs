@@ -27,5 +27,12 @@ namespace SharedRepositoryDemo
                 e.Handled = true;
             }
         }
+
+        private void SubtractionBtn_Click(object sender, EventArgs e)
+        {
+            var firstNumber = Convert.ToDecimal(firstNumberTextBox.Text);
+            var secondNumber = Convert.ToDecimal(secondNumberTextBox.Text);
+            resultLabel.Text = resultLabel.Text + (firstNumber - secondNumber);
+        }
     }
 }
